@@ -1,14 +1,24 @@
 {
     "compilerOptions": {
+        "target": "es5",
+        "declaration": false,
+        "noImplicitAny": false,
+        "removeComments": true,
+        "noLib": false,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
         "sourceMap": true,
         "rootDir": "./client",
-        "outDir": ".tmp"
+        "outDir": ".tmp",
+        "module": "system"
     },
     "filesGlob": [
         "client/{app,components}/**/!(*.spec).ts",
-        "client/typings/**/*.d.ts"
+        "client/typings/**/*.d.ts",
+        "client/jspm_packages/**/*.d.ts"
     ],
     "files": [
-        "client/app/app.ts"
+        "client/app/app.ts",
+        "client/app/app.component.ts"
     ]
 }

@@ -77,6 +77,7 @@
     "isparta": "^3.5.3",
     "istanbul": "~0.4.1",
     "jshint-stylish": "~2.1.0",
+    "jspm": "^0.16.30",
     "karma": "~0.13.3",
     "karma-chai-plugins": "^0.6.0",
     "karma-chrome-launcher": "~0.2.0",
@@ -101,6 +102,7 @@
     "sinon-chai": "^2.8.0",
     "supertest": "^1.1.0",
     "tslint": "^3.5.0",
+    "typings": "^0.6.9",
     "utile": "~0.3.0",
     "wiredep": "^2.2.2"
   },
@@ -113,5 +115,16 @@
     "test": "gulp test",
     "update-webdriver": "node node_modules/grunt-protractor-runner/node_modules/protractor/bin/webdriver-manager update"
   },
-  "private": true
+  "private": true,
+  "jspm": {
+    "directories": {
+      "baseURL": "client"
+    },
+    "dependencies": {
+      "angular2": "npm:angular2@^2.0.0-beta.8"
+    },
+    "devDependencies": {
+      "typescript": "npm:typescript@^1.6.2"
+    }
+  }
 }

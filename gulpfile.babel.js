@@ -28,6 +28,7 @@ const paths = {
         scripts: [
             `${clientPath}/**/!(*.spec|*.mock).ts`,
             `!${clientPath}/bower_components/**/*`,
+            `!${clientPath}/jspm_packages/**/*`,
             `!${clientPath}/typings/**/*`
         ],
         styles: [`${clientPath}/{app,components}/**/*.scss`],
