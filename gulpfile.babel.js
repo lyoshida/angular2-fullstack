@@ -128,8 +128,8 @@ let styles = lazypipe()
     .pipe(plugins.autoprefixer, {browsers: ['last 1 version']})
     .pipe(plugins.sourcemaps.write, '.');
 
-    let transpileClient = lazypipe()
-        .pipe(plugins.sourcemaps.init)
+let transpileClient = lazypipe()
+    .pipe(plugins.sourcemaps.init)
 
 let transpileServer = lazypipe()
     .pipe(plugins.sourcemaps.init)

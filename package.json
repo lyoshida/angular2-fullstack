@@ -67,6 +67,7 @@
     "gulp-sort": "^1.1.1",
     "gulp-sourcemaps": "^1.5.2",
     "gulp-svgmin": "^1.1.2",
+    "gulp-traceur": "^0.17.2",
     "gulp-tsd": "~0.0.4",
     "gulp-tslint": "~4.2.1",
     "gulp-typescript": "~2.10.0",

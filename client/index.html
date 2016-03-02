@@ -28,10 +28,10 @@
     <script src="jspm_packages/system-polyfills.js"></script>
     <script src="jspm_packages/npm/angular2@2.0.0-beta.8/es6/dev/src/testing/shims_for_IE.js"></script>
 
-    <script src="jspm_packages/npm/angular2@2.0.0-beta.8/bundles/angular2-polyfills.js"></script>
+    <script src="https://code.angularjs.org/2.0.0-beta.8/angular2-polyfills.min.js"></script>
     <script src="jspm_packages/system.src.js"></script>
-    <script src="jspm_packages/npm/rxjs@5.0.0-beta.2/bundles/Rx.js"></script>
-    <script src="jspm_packages/npm/angular2@2.0.0-beta.8/bundles/angular2.dev.js"></script>
+    <script src="https://code.angularjs.org/2.0.0-beta.8/Rx.min.js"></script>
+    <script src="https://code.angularjs.org/2.0.0-beta.8/angular2.dev.js"></script>
 
     <!-- 2. Configure SystemJS -->
     <script>
@@ -43,7 +43,7 @@
           }
         }
       });
-      System.import('app/app')
+      System.import('app/app.js')
             .then(null, console.error.bind(console));
     </script>
   </head>

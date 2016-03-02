@@ -15,7 +15,7 @@
     "filesGlob": [
         "client/{app,components}/**/!(*.spec).ts",
         "client/typings/**/*.d.ts",
-        "client/jspm_packages/**/*.d.ts"
+        "client/jspm_packages/**/*.ts"
     ],
     "files": [
         "client/app/app.ts",
