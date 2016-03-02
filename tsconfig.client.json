@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "sourceMap": true,
+        "rootDir": "./client",
+        "outDir": ".tmp"
+    },
+    "filesGlob": [
+        "client/{app,components}/**/!(*.spec).ts",
+        "client/typings/**/*.d.ts"
+    ],
+    "files": [
+        "client/app/app.ts"
+    ]
+}
