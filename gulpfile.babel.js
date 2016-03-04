@@ -28,7 +28,7 @@ const paths = {
         scripts: [
             `${clientPath}/**/!(*.spec|*.mock).ts`,
             `!${clientPath}/bower_components/**/*`,
-            `!${clientPath}/jspm_packages/**/*`,
+            `!${clientPath}/jspm_packages/npm/**/*`,
             `!${clientPath}/typings/**/*`
         ],
         styles: [`${clientPath}/{app,components}/**/*.scss`],
@@ -193,7 +193,8 @@ gulp.task('env:prod', () => {
  ********************/
 
 gulp.task('inject', cb => {
-    runSequence(['inject:js', 'inject:css', 'inject:scss'], cb);
+    // runSequence(['inject:js', 'inject:css', 'inject:scss'], cb);
+    runSequence(['inject:css', 'inject:scss'], cb);
 });
 
 gulp.task('inject:js', () => {
@@ -560,7 +561,9 @@ gulp.task('copy:extras', () => {
     return gulp.src([
         `${clientPath}/favicon.ico`,
         `${clientPath}/robots.txt`,
-        `${clientPath}/.htaccess`
+        `${clientPath}/.htaccess`,
+        `${clientPath}/config.js`,
+        `${clientPath}/jspm_packages/*.js`
     ], { dot: true })
         .pipe(gulp.dest(`${paths.dist}/${clientPath}`));
 });

@@ -15,10 +15,11 @@
     "filesGlob": [
         "client/{app,components}/**/!(*.spec).ts",
         "client/typings/**/*.d.ts",
-        "client/jspm_packages/**/*.ts"
+        "client/jspm_packages/**/*.js"
     ],
     "files": [
         "client/app/app.ts",
-        "client/app/app.component.ts"
+        "client/app/app.component.ts",
+        "client/components/navbar/NavbarComponent.ts"
     ]
 }

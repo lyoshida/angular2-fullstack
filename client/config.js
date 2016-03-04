@@ -1,5 +1,5 @@
 System.config({
-  baseURL: "client",
+  baseURL: "/",
   defaultJSExtensions: true,
   transpiler: "typescript",
   paths: {
@@ -8,6 +8,15 @@ System.config({
   },
 
   map: {
+    "npm:angular2@2.0.0-beta.8": {
+      "crypto": "github:jspm/nodelibs-crypto@0.1.0",
+      "es6-promise": "npm:es6-promise@3.1.2",
+      "es6-shim": "npm:es6-shim@0.33.13",
+      "process": "github:jspm/nodelibs-process@0.1.2",
+      "reflect-metadata": "npm:reflect-metadata@0.1.2",
+      "rxjs": "npm:rxjs@5.0.0-beta.2",
+      "zone.js": "npm:zone.js@0.5.15"
+    },
     "angular2": "npm:angular2@2.0.0-beta.8",
     "typescript": "npm:typescript@1.8.7",
     "github:jspm/nodelibs-assert@0.1.0": {
@@ -42,15 +51,6 @@ System.config({
     },
     "github:jspm/nodelibs-vm@0.1.0": {
       "vm-browserify": "npm:vm-browserify@0.0.4"
-    },
-    "npm:angular2@2.0.0-beta.8": {
-      "crypto": "github:jspm/nodelibs-crypto@0.1.0",
-      "es6-promise": "npm:es6-promise@3.1.2",
-      "es6-shim": "npm:es6-shim@0.33.13",
-      "process": "github:jspm/nodelibs-process@0.1.2",
-      "reflect-metadata": "npm:reflect-metadata@0.1.2",
-      "rxjs": "npm:rxjs@5.0.0-beta.2",
-      "zone.js": "npm:zone.js@0.5.15"
     },
     "npm:asn1.js@4.5.1": {
       "assert": "github:jspm/nodelibs-assert@0.1.0",

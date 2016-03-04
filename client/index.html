@@ -1,8 +1,5 @@
 <!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<html class="no-js">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -10,6 +7,8 @@
     <title>teste</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
+
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.css"> -->
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(client) app/vendor.css -->
       <!-- bower:css -->
@@ -24,27 +23,21 @@
 
     <!-- 1. Load libraries -->
     <!-- IE required polyfills, in this exact order -->
-    <script src="jspm_packages/npm/es6-shim@0.33.13/es6-shim.min.js"></script>
+    <!-- <script src="jspm_packages/npm/es6-shim@0.33.13/es6-shim.min.js"></script>
     <script src="jspm_packages/system-polyfills.js"></script>
-    <script src="jspm_packages/npm/angular2@2.0.0-beta.8/es6/dev/src/testing/shims_for_IE.js"></script>
+    <script src="jspm_packages/npm/angular2@2.0.0-beta.8/es6/dev/src/testing/shims_for_IE.js"></script> -->
 
-    <script src="https://code.angularjs.org/2.0.0-beta.8/angular2-polyfills.min.js"></script>
-    <script src="jspm_packages/system.src.js"></script>
-    <script src="https://code.angularjs.org/2.0.0-beta.8/Rx.min.js"></script>
-    <script src="https://code.angularjs.org/2.0.0-beta.8/angular2.dev.js"></script>
+    <!-- <script src="https://code.angularjs.org/2.0.0-beta.8/angular2-polyfills.min.js"></script> -->
+    <script src="system.js"></script>
+    <!-- <script src="https://code.angularjs.org/2.0.0-beta.8/Rx.min.js"></script>
+    <script src="https://code.angularjs.org/2.0.0-beta.8/angular2.dev.js"></script> -->
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.js"></script> -->
 
     <!-- 2. Configure SystemJS -->
+    <script src="config.js"></script>
     <script>
-      System.config({
-        packages: {
-          app: {
-            format: 'register',
-            defaultExtension: 'js'
-          }
-        }
-      });
-      System.import('app/app.js')
-            .then(null, console.error.bind(console));
+      System.import('jspm_packages/npm/reflect-metadata@0.1.2/Reflect.js');
+      System.import('app/app');
     </script>
   </head>
   <body>
@@ -54,7 +47,7 @@
 
     <!-- Add your site or application content here -->
 
-    <navbar></navbar>
+
     <my-app>Loading...</my-app>
 
     <footer></footer>
@@ -79,10 +72,7 @@
       <!-- endbower -->
     <!-- endbuild -->
     <!-- build:js({.tmp,client}) app/app.js -->
-      <script src="app/app.js"></script>
       <!-- injector:js -->
-
-      <script src="app/app.component.js"></script>
 
       <!-- endinjector -->
     <!-- endbuild -->
